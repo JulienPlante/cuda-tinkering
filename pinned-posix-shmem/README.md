@@ -18,3 +18,7 @@ Or simply:
 ```
 make run
 ```
+
+
+## Results
+No error is raised, and `reader` successfully reads dummy data wrote by `writer`. At least on my system (Ubuntu 18.04.2 LTS, CUDA 11.2), POSIX shared memory can be pinned using `cudaHostRegister`.

@@ -65,5 +65,7 @@ int main(int argc, char* argv[])
 	
 	printf("%lu bytes written to shm %s\n", SIZE, NAME);
 
+	checkCudaErrors(cudaHostUnregister(ptr));
+
 	return EXIT_SUCCESS;
 }
